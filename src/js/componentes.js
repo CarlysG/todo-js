@@ -96,7 +96,7 @@ btnBorrar.addEventListener('click', () => {
 // Filtros
 ulFiltors.addEventListener('click', (event) => {
 
-    // console.log(event.target.text);
+     console.log(event.target.text);
 
     const filtro = event.target.text;
     if( !filtro ){ return; }
@@ -118,7 +118,7 @@ ulFiltors.addEventListener('click', (event) => {
             break;
 
             case 'Completados':
-                if( completado ){
+                if( !completado ){
                     elemento.classList.add('hidden');
                 }
             break;
